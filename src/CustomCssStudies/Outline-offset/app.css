@@ -1,0 +1,112 @@
+:root {
+    --ff-primary: basic-sans, sans-serif;
+    --clr-primary: #ee6352;
+    --clr-body: #333;
+    --clr-bg: #ddd;
+    --spacer: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: var(--clr-body);
+    background: var(--clr-bg);
+}
+
+.button-container {
+    width: min(70vw, 50rem);
+    margin: 3rem auto;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, .15);
+    background: white;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    place-items: center;
+}
+
+.title {
+    color: rebeccapurple
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+    /* by default buttons don't inherit font size*/
+    line-height: 1;
+    border: 0;
+    background: none;
+    padding: 0.5em 1.5em;
+}
+
+.btn-1 {
+    color: #1c62a8;
+    border: 2px solid #1c62a8;
+    outline: 2px solid #1c62a8;
+    outline-offset: -2px;
+    transition: outline-offset 250ms ease-in-out;
+}
+
+.btn-1:hover,
+.btn-1:focus {
+    outline-offset: 2px;
+}
+
+.btn-2 {
+    color: #1c62a8;
+    border: 2px solid #1c62a8;
+    outline: 2px solid #1c62a8;
+    outline-offset: -2px;
+    transition: outline-offset 250ms ease-in-out;
+}
+
+.btn-2:hover,
+.btn-2:focus {
+    outline-offset: -6px;
+}
+
+.btn-3 {
+    color: #fff;
+    background: #ffda37;
+    border: 2px solid #ffda37;
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+    transition: outline-offset 250ms ease-in-out;
+}
+
+.btn-3:hover,
+.btn-3:focus {
+    outline-offset: -6px;
+}
+
+.btn-4 {
+    color: rgb(3, 133, 57);
+    border: 2px solid rgb(3, 133, 57);
+    outline: 2px solid rgb(3, 133, 57);
+    outline-offset: -2px;
+    transition: outline-offset 250ms ease-in-out,
+        outline-width 250ms ease-in-out;
+}
+
+.btn-4:hover,
+.btn-4:focus {
+    outline-width: 8px;
+    outline-offset: -4px;
+}

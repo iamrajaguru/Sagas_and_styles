@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+}
+
+.container {
+    width: min(70vw, 50rem);
+    margin: 3rem auto;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, .15);
+    background: #afd275;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    place-items: center;
+}
+
+.boxModel {
+    box-sizing: content-box;
+    background-color: aqua;
+    border: 5px solid red;
+    margin: 5px;
+    padding: 8px;
+    height: 50px;
+    width: 80px;
+}
+
+.boxSizing {
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    margin: 5px;
+    padding: 8px;
+    background-color: aqua;
+    border: 5px solid red;
+    height: 50px;
+    width: 80px;
+}
+
+.boxshadow {
+    /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+    Horizontal offset: A positive value offsets shadow to the right,
+    while a negative value offsets it to the left. 
+    Vertical offset: A positive value offsets shadow upwards,
+    while a negative value offsets it downwards.
+    Blur Radius: The length of the shadow. The longer the length,
+    the bigger and lighter the shadow becomes. There are no negative values.
+    Spread Radius: This is another length value,
+    where larger values result in bigger,
+    longer shadows. Color: This defines the shadow’s color,
+    just as we’d do for the CSS color property. 
+    Inset: The default value (initial) results in a drop shadow. Using the inset value moves the shadow inside the frame of the element,
+    resulting in an inner shadow.
+    */
+    height: 200px;
+    width: 300px;
+    /* border-radius: 100px; */
+    box-sizing: border-box;
+    /* box-shadow: 10px 20px 5px 10px rebeccapurple,
+        -10px 0px 55px inset; */
+          background-color: #afd275;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3)
+}
